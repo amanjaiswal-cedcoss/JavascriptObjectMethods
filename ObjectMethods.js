@@ -31,6 +31,6 @@ function displayKeysValues(){
 }
 function merge(){
     document.getElementById("showMerge").innerHTML="Food Items Object = "+JSON.stringify(foodItems)
-    const mergedObject=Object.assign(foodItems,Employee);
-    document.getElementById("showMerge").innerHTML+=" <br/> Merged Object = "+JSON.stringify(mergedObject);
+    Object.assign(foodItems,Employee);
+    document.getElementById("showMerge").innerHTML+=" <br/> Merged Object = "+JSON.stringify(foodItems);
 }
