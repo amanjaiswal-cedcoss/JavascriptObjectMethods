@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./ObjectMethods.css">
+    <title>Object Methods</title>
+  </head>
+  <body>
+    <div>
+      <h2>Enter employee details</h2>
+      <form>
+        <label>Select Position:</label><select id="selectPosition"><option>Manager</option><option>Cashier</option></select>
+        <label>Select Type:</label><select id="selectType"><option>Hourly</option><option>Daily</option><option>Daily</option></select>
+        <label>Are you available:</label><select id="selectAvailability"><option value=true>Yes</option><option value=false>No</option></select>
+      </form>
+      <hr/>
+      <h3>Task 1 : Create an object</h3>
+      <button onclick="showDetails()">Show Details</button>
+      <p id="showDetails"></p>
+      <hr/>
+      <h3>Task 2 : Print all the keys</h3>
+      <button onclick="displayKeys()">Show Keys</button>
+      <p id="showKeys"></p>
+      <hr/>
+      <h3>Task 3 : Print all the values</h3>
+      <button onclick="displayValues()">Show Values</button>
+      <p id="showValues"></p>
+      <hr/>
+      <h3>Task 4 : Print all the key values as an individual array, nested in an array</h3>
+      <button onclick="displayKeysValues()">Show Keys and Values</button>
+      <p id="showKeysValuesPairs"></p>
+      <hr/>
+      <h3>Task 5 : Prevent the Employee object from updation</h3>
+      <button onclick="freeze()">Freeze</button>
+      <p id="showFreeze"></p>
+      <hr/>
+      <h3>Tsk 6 : Create one more object for food items and merge with above created object to get a new object and print it.</h3>
+      <button onclick="merge()">Merge</button>
+      <p id="showMerge"></p>
+    </div>
+  </body>
+  <script src="./ObjectMethods.js"></script>
+</html>
